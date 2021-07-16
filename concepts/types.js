@@ -51,14 +51,15 @@
 // console.log(Boolean({}));// true
 // console.log(Boolean(function() {}));// true
 
-// Combination of numbers and strings
-console.log(1 +'2'); // 12 string , 'cause 1, turned(casted) into String, js says this is concatenation
-console.log('' + 1 + 0); // 10 - string
-console.log('' -1 + 0); // -1 - number, 'cause string doesn't know minus so empty string and others turned into numbers
-console.log('3' * '8');// string doesnt know multiplication so strings are turned into numbers
-console.log(4 + 10 + 'px'); // sequence is important, "14px"
-console.log('px' + 5 + 10); // "px" + "5" + "10" = px510, 1. 5 turned into string and unified with px, and 10 - string = px510
-console.log('42' - 40); // 42 str -> 42 numb === 42 - 40 = 2
-// If we have actual string not only number, we get NaN, for ex:
-console.log("42px" - 2); //NaN
+// // Combination of numbers and strings
+// console.log(1 +'2'); // 12 string , 'cause 1, turned(casted) into String, js says this is concatenation
+// console.log('' + 1 + 0); // 10 - string
+// console.log('' -1 + 0); // -1 - number, 'cause string doesn't know minus so empty string and others turned into numbers
+// console.log('3' * '8');// string doesnt know multiplication so strings are turned into numbers
+// console.log(4 + 10 + 'px'); // sequence is important, "14px"
+// console.log('px' + 5 + 10); // "px" + "5" + "10" = px510, 1. 5 turned into string and unified with px, and 10 - string = px510
+// console.log('42' - 40); // 42 str -> 42 numb === 42 - 40 = 2
+// // If we have actual string not only number, we get NaN, for ex:
+// console.log("42px" - 2); //NaN
+console.log(null + 2); // null is casted to 0 // 2
 
