@@ -61,5 +61,30 @@
 // console.log('42' - 40); // 42 str -> 42 numb === 42 - 40 = 2
 // // If we have actual string not only number, we get NaN, for ex:
 // console.log("42px" - 2); //NaN
-console.log(null + 2); // null is casted to 0 // 2
+// console.log(null + 2); // null is casted to 0 // 2
+// console.log(undefined + 42); // undefined can't be casted to a number, so answer is NaN
 
+// // == vs ===
+
+// // double equals operator compares by casting the data
+// // triple equals operator compares only data, DO NOT castes the DATA
+
+// console.log(2 == '2'); // we get there true, 'cause js interpretator castes to the same type
+// console.log(2 === '2'); // false - 'cause triple equals compare roughly data.
+
+// console.log(undefined == null); // true - 'cause it is casted to be the same type
+// console.log(undefined === null); // false
+
+// // good practise is to use triple equals
+
+// console.log('0' == false); // true - expression is casted to numbers false - 0, '0' - 0
+// console.log('0' == 0); // true
+// console.log(0 == 0); // true
+
+// //  Some error provoking expressions
+// console.log(false == ''); // true - empty string - '' is casted to false    
+// console.log(false == []); // false
+// console.log(false == {}); // false
+// console.log('' == 0);  // true
+// console.log('' == []); // true 
+// console.log('' == {}); // false
