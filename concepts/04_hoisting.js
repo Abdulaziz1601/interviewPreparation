@@ -18,5 +18,17 @@
 // console.log(num);
 // // let and const can't be hoisted, so It gives an error
 
-// 
+// Function Expression and Function Declaration
+console.log(square(25));
 
+// function square(num) { // <-- Function Declaration
+//     return num ** 2;
+// }
+
+const square = function(num) { // we are assigning function to a variable, so
+    // function expression, has to be called after initialisation
+    return num ** 2;
+}
+console.log(square());
+
+// function declaration we can call anywhere, function expression is called only after initialisation
