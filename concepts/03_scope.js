@@ -6,14 +6,15 @@ function funcA() {
 
         function funcC() {
             let c = 3;
-            console.log('funcC:', a, b, c);
-        }
 
+            console.log('funcC', a, b, c);
+        }
         funcC();
         console.log('funcB:', a, b);
     }
+    
     funcB();
-    console.log('funcA:', a);
+    console.log('func A', a);
 }
 
 funcA();

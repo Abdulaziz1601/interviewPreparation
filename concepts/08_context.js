@@ -1,25 +1,45 @@
-const person = {
-    surname: 'Stark',
-    knows: function(what, name) {
-        console.log(`You ${what} know ${name} ${this.surname}`);
-    }
-}
+// // // const p = {
+// // //     surname: 'Stark',
+// // //     knows: function(what, name) {
+// // //         console.log(`you ${what} know ${name}  ${this.surname}`);
+// // //     },
+// // // };
 
-const John = {
-    surname: 'Snow'
-}
+// // // const john  = {surname: 'Snow'};
 
-person.knows('All', 'Bran');
+// // // p.knows('All', 'BRen');
 
-// John.__proto__ = person;
-// John.knows('All', 'John');
+// // // p.knows.call(john, 'nothing', 'John');
+// // // p.knows.apply(john, ['nothing', 'John']); 
+// // // p.knows.bind(john, 'nothing', 'John')(); 
 
-person.knows.call(John, "All", "John");
-person.knows.apply(John, ["NOTHING", "John"]);
+// // // -=-=-=-=--==-=-=--=-=-=-=-=-=-=-=
 
-person.knows = person.knows.bind(John);
+// // function Person(name, age) {
+// //     this.name = name;
+// //     this.age = age;
 
-person.knows( "All", "John");
+// //     console.log(this);
+// // }
+
+// // const elena = new Person('Elena', 20);
+
+// // Explicit Binding
+// function logThis() {
+//     console.log(this);
+// }
+// const obj = {a: 42};
+
+// logThis.apply(obj);
+// logThis.call(obj);
+// logThis.bind(obj)();
+    
+// // -=-=-=-=-=-=-=-=-=-=-=-=-=-
+// const animal = {
+//     legs: 4,
+//     logThis: function() {
+//         console.log(this);
+//     }
+// };
 
 
-per

@@ -1,46 +1,39 @@
-// // closures - when functions can access vars on the above scope
+// // // // // closures - when functions can access vars on the above scope
 
-// function sayHelloTo(name) {
-//     const message  = 'Hello' + name;
-//     return function() { // this anonymous function have access to above message var
-//         console.log(messsage);
-//     }
-// }
+// // // function sayHelloTo(name) {
+// // //     const message = 'Hello' + name;
 
-// const helloToLee = sayHelloTo('Lee'); // this returns function that says hello to lee
-// helloToLee();
+// // //     return function() {
+// // //         console.log(message);
+// // //     }
+// // // }
 
-function createframeWorkManaager() {
-    const fw = ['Angular', 'react'];
-    return {
-        print: function() {
-           console.log(fw.join(' ')); 
-        },
-        add: function(framwork) {
-            fw.push(framwork);
-        }
-    }
-}
-const manager = createframeWorkManaager();
-console.log(manager);
+// // // const HelloToAbdulaziz = sayHelloTo(' Ali');
+// // // HelloToAbdulaziz();
 
-// console.log(fw);
+// // function createFrameworkManager() {
+// //     const fw = ['Angular', 'Vue'];
 
-manager.add("VUeJS");
-manager.print();
+// //     return {
+// //         print: function() {
+// //             console.log(fw);
+// //         },
+// //         add: function(frameworks) {
+// //             fw.push(frameworks);
+// //         },
+// //     }
+// // }
 
-// we made fw private
+// // const manager  = createFrameworkManager();
+// // manager.print();
+// // manager.add('Vue JS');
+// // manager.print();
 
-// setTimout 
+// // setTimout
+// const fib = [1, 2, 3, 5, 8, 13];
 
-const fib = [1, 2, 3, 5, 8, 13];
-
-for (let i = 0; i < fib.length; i++) {
-    setTimeout(function() {
-        console.log(`fib[${i}] = ${fib[i]}`);
-    }, 1500)
-    
-}
-
-
-
+// for(var i = 0; i < fib.length; i++) {
+//     setTimeout(() => {
+//         console.log(`fib[${i}]: ${fib[i]}`);
+//     }, 1500)
+// };
