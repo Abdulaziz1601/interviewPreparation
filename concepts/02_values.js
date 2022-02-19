@@ -11,8 +11,8 @@
 
 // let c = [1, 2, 3, 4];
 
-// console.log('a', a);
-// console.log('b', b);
+console.log('a', a);
+console.log('b', b);
 
-// console.log(a === b);
-// console.log(a === c);
+console.log(a === b);
+console.log(a === c);

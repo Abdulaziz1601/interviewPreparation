@@ -104,4 +104,14 @@
 //    }, 1000);
 // }
 
-// Event Loop
+const obj = {
+    a: 5,
+    b: 1,
+};
+
+const copy  = Object.assign({}, obj);
+copy.a = 10;
+
+console.log(copy);
+
+console.log(obj);

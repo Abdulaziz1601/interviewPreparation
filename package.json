@@ -1,0 +1,26 @@
+{
+  "name": "interviewpreparing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdulaziz1601/interviewPreparation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abdulaziz1601/interviewPreparation/issues"
+  },
+  "type": "module",
+  "homepage": "https://github.com/Abdulaziz1601/interviewPreparation#readme",
+  "dependencies": {
+    "chalk": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
