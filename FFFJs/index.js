@@ -1,7 +1,7 @@
 let l = (p) => console.log(p);
-let triple =  function (x) {
-    return x*3;
-};
+// let triple =  function (x) {
+//     return x*3;
+// };
 
 // // let waffle = triple;
 
@@ -27,3 +27,12 @@ let triple =  function (x) {
 
 // l(nums.map(n => n*3));
 
+const orders = [
+    {a: 250},
+    {a: 400},
+    {a: 300},
+    {a: 200},
+    {a: 150}
+];
+
+l(orders.map(item => item.a).reduce((p, c) => p+c));
